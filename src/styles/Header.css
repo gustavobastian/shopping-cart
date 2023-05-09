@@ -1,0 +1,18 @@
+.headerClass{
+    display:grid;
+    resize: both;
+    grid-template-columns: 60% 40%;
+    height: 30px;
+}
+.leftSpace{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    background: rgb(167, 166, 166);
+}
+.rightSpace{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: gray;
+}
