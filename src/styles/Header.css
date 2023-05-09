@@ -6,13 +6,49 @@
 }
 .leftSpace{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: start;
     background: rgb(167, 166, 166);
+}
+
+.Logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    color:black;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left:10px;
 }
 .rightSpace{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     background: gray;
+}
+a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;    
+    opacity: 0.7;
+    color:black;
+}
+a:hover{
+    opacity: 1;
+    color:yellow;
+}
+p{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;    
+    opacity: 0.7;
+}
+p:hover{
+    opacity: 1;
+    color:yellow;
 }

@@ -31,7 +31,10 @@
     "deploy": "gh-pages -d build"
   },
   "jest": {
-    "testMatch": [ "**/tests/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)" ]
+    "testMatch": [
+      "**/tests/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ]
   },
   "eslintConfig": {
     "extends": [

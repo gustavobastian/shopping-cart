@@ -5,10 +5,13 @@ import About from "./pages/About";
 import Shop from "./pages/Shop";
 
 
+
 const RouteSwitch = () => {
+
+
   return (
-    <BrowserRouter>
-      <Routes>
+    <BrowserRouter>      
+      <Routes>        
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/shop" element={<Shop />} />
