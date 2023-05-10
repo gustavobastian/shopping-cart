@@ -3,7 +3,8 @@
     display:grid;
     resize: both;
     grid-template-columns: 60% 40%;
-    height: 30px;
+    grid-template-rows: auto;
+    height: auto;
     
 }
 .leftSpace{
@@ -17,4 +18,15 @@
     flex-direction: row;
     justify-content: space-around;
     background: gray;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footerClass {
+    display:grid;
+    resize: both;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    height: auto;
+  }
 }

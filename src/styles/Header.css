@@ -1,54 +1,77 @@
-.headerClass{
-    display:grid;
-    resize: both;
-    grid-template-columns: 60% 40%;
-    height: 30px;
-}
-.leftSpace{
-    display:flex;
-    flex-direction: row;
-    justify-content: start;
-    background: rgb(167, 166, 166);
-}
 
-.Logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    color:black;
-    font-weight: bold;
-    font-size: 25px;
-    padding-left:10px;
-}
-.rightSpace{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: gray;
-}
-a{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;    
-    opacity: 0.7;
-    color:black;
-}
-a:hover{
-    opacity: 1;
-    color:yellow;
-}
-p{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;    
-    opacity: 0.7;
-}
-p:hover{
-    opacity: 1;
-    color:yellow;
-}
+    .headerClass{
+        display:grid;
+        resize: both;
+        grid-template-columns: 60% 40%;
+        height: 30px;
+    }
+    .leftSpace{
+        display:flex;
+        flex-direction: row;
+        justify-content: start;
+        background: rgb(167, 166, 166);
+    }
+    
+    .Logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        color:black;
+        font-weight: bold;
+        font-size: 25px;
+        padding-left:10px;
+    }
+    .rightSpace{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background: gray;
+    }
+    a{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;    
+        opacity: 0.7;
+        color:black;
+    }
+    a:hover{
+        opacity: 1;
+        color:yellow;
+    }
+    p{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;    
+        opacity: 0.7;
+    }
+    p:hover{
+        opacity: 1;
+        color:yellow;
+    }    
+
+.hamburger {
+    
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #283b8b!important;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+    }
+.hamburger:hover {
+    background-color: #2642af!important;
+    }
+      
