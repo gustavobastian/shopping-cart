@@ -1,6 +1,7 @@
-.Home{
+
+.CartForm{
     height: 90vh;
-    background:transparent;
+    background: White;
     display: flex;
     flex-direction: row;
     justify-content: center;

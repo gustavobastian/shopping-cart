@@ -3,7 +3,7 @@ import '../styles/Shop.css';
 function Shop() {
   return (
     <div className="Shop">
-      <h1>Shop</h1>
+      <h1>Helo</h1>
     </div>
   );
 }
