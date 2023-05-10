@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footerClass">
        <div className="leftSpace">
-        <p>Develped by: Gustavo Bastian(2023)</p>
+        <p>Developed by: Gustavo Bastian(2023)</p>
        </div> 
        <div className="rightSpace">
         <p>contact:bastian.gustavo@gmail.com</p>        

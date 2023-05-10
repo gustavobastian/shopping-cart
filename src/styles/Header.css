@@ -3,12 +3,13 @@
         display:grid;
         resize: both;
         grid-template-columns: 60% 40%;
-        height: 30px;
+        height: auto;
     }
     .leftSpace{
         display:flex;
-        flex-direction: row;
-        justify-content: start;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
         background: rgb(167, 166, 166);
     }
     
@@ -21,6 +22,7 @@
         font-weight: bold;
         font-size: 25px;
         padding-left:10px;
+        padding-top:10px;
     }
     .rightSpace{
         display:flex;
@@ -55,23 +57,69 @@
     }    
 
 .hamburger {
-    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     border: 0;
-    height: 40px;
+    height: auto;
     width: 40px;
     padding: 0.5rem;
-    border-radius: 50%;
-    background-color: #283b8b!important;
+    border-radius: 50%;    
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     
-    position: absolute;
+    position: relative;
     top: 50%;
     right: 25px;
-    transform: translateY(-50%);
-    display: none;
+    transform: translateY(-50%);   
+    /*display:none; */
     }
 .hamburger:hover {
-    background-color: #2642af!important;
+    
     }
       
+
+@media screen and (max-width: 768px) {
+    .headerClass{
+        display:flex;
+        flex-direction: column;        
+        height: auto;
+    }
+    .hamburger{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    /*
+    .linkStyle{
+        display:none;
+    }*/
+    .rightSpace{        
+        flex-direction: row;        
+        justify-content: space-around;
+    }
+    .leftSpace{        
+        flex-direction: column;        
+        justify-content: space-around;
+    }
+    .linkStyle{
+        flex-direction: column;
+    }
+    a{
+        flex-direction: column;
+    }
+    p{
+        flex-direction: column;
+    }
+        a:hover{
+        opacity: 1;
+        color:yellow;
+    }    
+    p:hover{
+        opacity: 1;
+        color:yellow;
+    }    
+}
