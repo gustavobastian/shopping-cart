@@ -1,9 +1,16 @@
 
 .Shop{
     height: 90vh;
-    background: rgb(86, 0, 88);
+    background: transparent;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.ItemsArray{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
 }

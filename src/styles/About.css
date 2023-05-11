@@ -1,6 +1,6 @@
 .About{
     height: 90vh;
-    background: rgb(65, 223, 223);
+    background: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,9 +13,9 @@
     justify-content: center;
     align-items: center;
     width: 70%;
-    color:Gray!important;
+    color:white!important;
     font-weight: bold;
 }
 .pAbout{
-    color:Gray!important;    
+    color:white!important;    
 }
