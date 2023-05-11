@@ -19,3 +19,8 @@
 .pAbout{
     color:white!important;    
 }
+@media screen and (max-width: 420px) {
+    .About{
+        height: 200vh;
+    }
+}

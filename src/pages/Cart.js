@@ -6,10 +6,14 @@ function Cart(props) {
     const [state,setState]=useState(props.value);
     const [ignored,forceupdate]=useReducer(x=>x+1,0);
 
+    let list=JSON.parse(localStorage.getItem('data'));
+    console.log("initial list:"+JSON.stringify(list))
+
     console.log(JSON.stringify(props.value))
     useEffect(()=>{
         console.log("altered")        
-        console.log(JSON.stringify(props.value.list))     
+        //console.log(JSON.stringify(props.value.list))     
+        list=JSON.parse(localStorage.getItem('data'));
         forceupdate();
       },[props.value.list]);
 
@@ -17,9 +21,10 @@ function Cart(props) {
     <div className="CartForm">        
       <h1>Cart:</h1>
       <ul>
-      {props.value.list.map((element)=>{
+      {list.map((element)=>{        
         return  <li key={element.IdOp}><div>{element.name}":"{element.price}</div></li>
         })}
+     
       </ul>  
     </div>
   );

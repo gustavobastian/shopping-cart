@@ -1,10 +1,10 @@
 import '../styles/Home.css';
-
+import { GiCommercialAirplane } from "@react-icons/all-files/gi/GiCommercialAirplane";
 
 function Home() {
   return (
     <div className="Home">
-      <h1>Home</h1>
+      <div className="mainImage"><GiCommercialAirplane/></div>
     </div>
   );
 }

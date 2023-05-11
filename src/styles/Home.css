@@ -6,3 +6,12 @@
     justify-content: center;
     align-items: center;
 }
+.mainImage{
+    font-size:150px;
+    color:rgb(224, 148, 148);
+}
+@media screen and (max-width: 768px) {
+    .Home{
+        height: 200vh;
+    }
+}

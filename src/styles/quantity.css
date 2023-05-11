@@ -1,0 +1,41 @@
+.quantity{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    width: 20%;
+    padding:5px;
+    margin:5px;
+    margin-top:0px;
+    padding-top:5px;
+}
+.boxQuantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 10px;
+    
+}
+.quantityButtons{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    
+}
+.QButtons{
+    background: gold;
+}
+.quantityInput{
+    display:flex;
+    flex-direction: row;
+    width: 50%!important;
+    font-weight: bold;
+    position:relative;    
+    border-radius: 2px;
+    padding:0;
+    font-size: 25px;
+}

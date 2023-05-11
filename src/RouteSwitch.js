@@ -20,7 +20,9 @@ const RouteSwitch = () => {
   useEffect(()=>{
       console.log("altered")        
       console.log(JSON.stringify(buyList.list))     
+      localStorage.setItem('data', JSON.stringify(buyList.list));
       forceupdate();
+      
     },[buyList.list]);
 
 
