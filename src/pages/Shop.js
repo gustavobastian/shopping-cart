@@ -4,18 +4,22 @@ import ItemComponent from '../components/itemComponent';
 let item=[{
   "id":1,
   "name":"Aurora",
+  "price":"1,25",
   },
   {
     "id":2,
     "name":"Boreal",
+    "price":"3,25",
   },
   {
     "id":3,
     "name":"Spacial",
+    "price":"1,00",
   },
   {
     "id":4,
     "name":"Bolid",
+    "price":"2,00",
   }
 ];
 
