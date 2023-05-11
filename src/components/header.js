@@ -1,24 +1,18 @@
 import '../styles/Header.css';
-import { Link,BrowserRouter } from "react-router-dom";
+
 import { GiCommercialAirplane } from "@react-icons/all-files/gi/GiCommercialAirplane";
 import { GiShoppingCart } from "@react-icons/all-files/gi/GiShoppingCart";
 
-import {useState} from "react";
-
-function Header() {
-  const [state,setState]=useState(true);
 
 
-  const expandMenu=()=>{
-    console.log("here")
-    setState(true);
+function Header(props) {
+
+  const onClickHome=()=>{
+  this.props.history.push('/');
   }
-
-  const closeMenu=()=>{
-    console.log("closing")
-    setState(false);
-  }  
-
+  const onClickCart=()=>{
+    this.props.history.push('/cart');
+    }
   return (
     <div className="headerClass">
        <div className="leftSpace">
@@ -27,7 +21,7 @@ function Header() {
        </div>        
        <div className="rightSpace">
         
-        <a className='linkStyle' href="/">Home</a>
+        <a className='linkStyle' href="/home">Home</a>
         <a className='linkStyle' href="/about">About</a>
         <a className='linkStyle' href="/shop">Shop</a>
         <a className='linkStyle' href="/cart"><GiShoppingCart/></a>  

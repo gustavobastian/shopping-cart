@@ -1,11 +1,9 @@
 import '../styles/ItemComponent.css';
 
 function ItemComponent(props) {
-    let valueLocal=props.value;
-    console.log(valueLocal)
+    let valueLocal=props.value;    
 
-    const addItemLocal=()=>{
-        console.log("clicked");
+    const addItemLocal=()=>{        
         props.addItem()
     }
   return (

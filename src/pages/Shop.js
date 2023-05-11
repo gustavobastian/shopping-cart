@@ -1,6 +1,9 @@
 import '../styles/Shop.css';
 import ItemComponent from '../components/itemComponent';
 import { useState } from 'react';
+import uniqid from "uniqid";
+
+
 
 let item=[{
   "id":1,
@@ -26,8 +29,9 @@ let item=[{
 
 function Shop(props) {
 
-  const addElementLocal=(value)=>{
-    props.addElement(value);    
+  const addElementLocal=(value)=>{    
+    let elementToSend={"id":value.id,"name":value.name,"price":value.price,"IdOp":uniqid(),}
+    props.addElement(elementToSend);    
   }
 
   return (
