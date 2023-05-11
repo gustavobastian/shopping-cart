@@ -1,5 +1,6 @@
 import '../styles/Shop.css';
 import ItemComponent from '../components/itemComponent';
+import { useState } from 'react';
 
 let item=[{
   "id":1,
@@ -23,14 +24,19 @@ let item=[{
   }
 ];
 
-function Shop() {
+function Shop(props) {
+
+  const addElementLocal=(value)=>{
+    props.addElement(value);    
+  }
+
   return (
     <div className="Shop">
       <div className='ItemsArray'>
-          <ItemComponent value={item[0]}/>
-          <ItemComponent value={item[1]}/>
-          <ItemComponent value={item[2]}/>
-          <ItemComponent value={item[3]}/>
+          <ItemComponent value={item[0]} addItem={addElementLocal.bind(this,item[0])}/>
+          <ItemComponent value={item[1]} addItem={addElementLocal.bind(this,item[1])}/>
+          <ItemComponent value={item[2]} addItem={addElementLocal.bind(this,item[2])}/>
+          <ItemComponent value={item[3]} addItem={addElementLocal.bind(this,item[3])}/>
       </div>
     </div>
   );
