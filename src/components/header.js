@@ -2,7 +2,7 @@ import '../styles/Header.css';
 
 import { GiCommercialAirplane } from "@react-icons/all-files/gi/GiCommercialAirplane";
 import { GiShoppingCart } from "@react-icons/all-files/gi/GiShoppingCart";
-
+import { Link } from 'react-router-dom';
 
 
 function Header(props) {
@@ -21,10 +21,10 @@ function Header(props) {
        </div>        
        <div className="rightSpace">
         
-        <a className='linkStyle' href="/home">Home</a>
-        <a className='linkStyle' href="/about">About</a>
-        <a className='linkStyle' href="/shop">Shop</a>
-        <a className='linkStyle' href="/cart"><GiShoppingCart/></a>  
+        <Link className='linkStyle' to="/home">Home</Link>
+        <Link className='linkStyle' to="/about">About</Link>
+        <Link className='linkStyle' to="/shop">Shop</Link>
+        <Link className='linkStyle' to="/cart"><GiShoppingCart/></Link>  
        </div> 
       
     </div>

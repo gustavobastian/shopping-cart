@@ -3,9 +3,48 @@
     height: 90vh;
     background: White;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.ticket{
+    text-decoration: none;
+}
+.liTicket{    
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 300px;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    border-style: none none solid none;
+}
+.liTicketHeader{    
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 300px;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    border-style: none none none none;
+    margin-bottom: 20px;
+    color:red;
+}
+.ulTicket{
+    text-decoration: none;
+}
+.itemName{
+    display:flex;
+    flex-direction: row;    
+    width: 30%;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    width: 30%;
 }
 @media screen and (max-width: 420px) {
     .CartForm{

@@ -10,7 +10,7 @@ import { useState,useEffect,useReducer ,React } from "react";
 
 const RouteSwitch = () => {
 
-  const [buyList,setBuyList]=useState({list:[{"id":0,"name":"","price":"","IdOp":uniqid()}]});
+  const [buyList,setBuyList]=useState({list:[{"id":0,"name":"","price":"","IdOp":uniqid(),"quantity":0}]});
 
 
   
