@@ -7,7 +7,7 @@ function Cart(props) {
 
 
   
-  const [state,setState]=useState(props.value);
+  
   const [total,setTotal]=useState(0);
   
   const [ignored,forceupdate]=useReducer(x=>x+1,0);
@@ -19,19 +19,16 @@ function Cart(props) {
         totalLocal=totalLocal+(parseFloat(element.price)*parseInt(element.quantity))        
       }
     });
-    setTotal(totalLocal)
-    return ;
+    setTotal(totalLocal);    
   }
 
   useEffect(()=>{
-        console.log("altered")        
-        console.log(JSON.stringify(props.value.list))             
         totalCalc();
         forceupdate();        
       },[props.value.list]);
 
-  const deleteItem=(e)=>{
-        console.log("delete:"+e)   
+  const deleteItem=(e)=>{        
+        console.log(ignored);   
         props.removeElement(e);         
         return 1;
   }  

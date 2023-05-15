@@ -1,6 +1,5 @@
 .About{
-    height: 90vh;
-    background: transparent;
+    height: 90vh;    
     display: flex;
     flex-direction: column;
     justify-content: start;

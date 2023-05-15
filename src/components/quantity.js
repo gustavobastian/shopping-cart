@@ -1,24 +1,26 @@
 import '../styles/quantity.css';
-import uniquid from 'uniquid';
+
 import { useEffect,useState,useReducer } from 'react';
 
 function QuantityItem(props){
-    let valueLocal=props.value;       
     
     
-    const [state,setState]= useState(props.value);
+    
+    
     const [quantity,setQuantity]= useState(0);
     const [ignored,forceupdate]=useReducer(x=>x+1,0);
 
     useEffect(()=>{
       console.log("altered")        
-      console.log(JSON.stringify(props.value.list))             
+      console.log(JSON.stringify(props.value.list));
+      
       forceupdate();
-    },[quantity]);
+    },[quantity,props.value.list]);
 
     
     const incQ=()=>{
       props.increaseQuantity(quantity+1);
+      console.log(ignored);
       setQuantity(quantity+1);
       
     }

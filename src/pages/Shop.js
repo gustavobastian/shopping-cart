@@ -1,6 +1,5 @@
 import '../styles/Shop.css';
 import ItemComponent from '../components/itemComponent';
-import { useState } from 'react';
 import Header from '../components/header';
 import uniqid from "uniqid";
 

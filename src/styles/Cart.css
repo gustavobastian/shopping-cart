@@ -1,7 +1,6 @@
 
 .CartForm{
-    height: 90vh;
-    background: White;
+    height: 90vh;    
     display: flex;
     flex-direction: column;
     justify-content: start;

@@ -18,8 +18,6 @@ const RouteSwitch = () => {
 
   
   useEffect(()=>{
-      console.log("altered")        
-      console.log(JSON.stringify(buyList.list))     
       localStorage.setItem('data', JSON.stringify(buyList.list));
       forceupdate();
       
@@ -27,11 +25,9 @@ const RouteSwitch = () => {
 
 
 
-  const addElement=(value)=>{
-    console.log("on top:"+JSON.stringify(value));    
-    
-    setBuyList({list:buyList.list.concat(value)});
-    console.log(JSON.stringify(buyList.list));
+  const addElement=(value)=>{    
+    console.log(ignored);
+    setBuyList({list:buyList.list.concat(value)});    
     return 1;
   }
 
