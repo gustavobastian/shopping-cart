@@ -35,13 +35,25 @@ const RouteSwitch = () => {
     return 1;
   }
 
+
+  const removeElement=(value)=>{
+    let newBuyList=[];
+    buyList.list.forEach(element => {
+      if(element.IdOp!==value){
+        newBuyList.push(element);
+      }
+    });
+    setBuyList({list:newBuyList});    
+    return 1;
+  }
+
   return (
     <BrowserRouter>      
       <Routes>        
         <Route path="/" element={<Home value={buyList}/>} />
         <Route path="/about" element={<About value={buyList} />} />
-        <Route path="/shop" element={<Shop value={buyList} addElement={(event)=>{addElement(event)}} />} />
-        <Route path="/cart" element={<Cart value={buyList}/>} />
+        <Route path="/shop" element={<Shop value={buyList} addElement={(element)=>{addElement(element)}} />} />
+        <Route path="/cart" element={<Cart value={buyList} removeElement={(element)=>{removeElement(element)}}/>} />
          {/* 👇️ only match this when no other routes match */}
          <Route
             path="*"

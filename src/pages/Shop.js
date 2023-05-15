@@ -9,27 +9,26 @@ import uniqid from "uniqid";
 let item=[{
   "id":1,
   "name":"Aurora",
-  "price":"1,25",
+  "price":"1.25",
   },
   {
     "id":2,
     "name":"Boreal",
-    "price":"3,25",
+    "price":"3.25",
   },
   {
     "id":3,
     "name":"Spacial",
-    "price":"1,00",
+    "price":"1.00",
   },
   {
     "id":4,
     "name":"Bolid",
-    "price":"2,00",
+    "price":"2.00",
   }
 ];
 
 function Shop(props) {
-
   const addElementLocal=(value,quantity)=>{        
     let elementToSend={"id":value.id,"name":value.name,"price":value.price,"IdOp":uniqid(),"quantity":quantity}
     props.addElement(elementToSend);    
