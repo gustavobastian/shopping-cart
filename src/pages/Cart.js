@@ -46,7 +46,7 @@ function Cart(props) {
     <div>
       <Header/>
       <div className="CartForm">        
-        <h1>Cart:</h1>               
+        <h1 className='cartTitle'>Cart:</h1>               
         <ul className="ulTicket">
         {props.value.list.map((element)=>{    
           if(element.id!==0){    

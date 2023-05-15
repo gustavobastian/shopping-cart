@@ -4,9 +4,12 @@
     background: White;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background: linear-gradient(black,rgb(180, 245, 245),blue);
+}
+.cartTitle{
+    color:white;
 }
 .ticket{
     text-decoration: none;

@@ -4,7 +4,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    padding-top: 25%;
+
 }
 .mainImage{
     font-size:150px;
