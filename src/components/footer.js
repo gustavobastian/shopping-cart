@@ -6,10 +6,9 @@ function Footer() {
        <div className="leftSpace">
         <p>Developed by: Gustavo Bastian(2023)</p>
        </div> 
-       <div className="rightSpace">
-        <p>contact:bastian.gustavo@gmail.com</p>        
-       </div> 
-      
+       <div className="rightSpace">              
+        <p>Images from WikimediaCommons</p>        
+       </div>       
     </div>
   );
 }

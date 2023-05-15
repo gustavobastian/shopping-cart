@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(black,rgb(112, 112, 3),blue);
 }
 
 .innerAbout{

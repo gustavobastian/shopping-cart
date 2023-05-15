@@ -26,6 +26,7 @@
     font-size: 18px;
     padding-top: 10px;
     margin-bottom:10px;
+    margin-left: 10px;
 }
 .addButton:hover{        
     background: rgb(145, 136, 110);

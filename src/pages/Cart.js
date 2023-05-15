@@ -34,8 +34,14 @@ function Cart(props) {
         console.log("delete:"+e)   
         props.removeElement(e);         
         return 1;
-  }    
+  }  
 
+  const finish=()=>{
+    console.log("removing ticket:")   
+    window.alert("thanks for the purchasing!")
+    props.finish();
+    return 1;
+  }    
   return (
     <div>
       <Header/>
@@ -54,7 +60,7 @@ function Cart(props) {
                     <div className='price'>
                     {parseFloat((element.price))*(element.quantity)} USD
                     </div>
-                    <button id="Item_" onClick={deleteItem.bind(this,(element.IdOp))} ><FaTrashAlt/></button>
+                    <button id="Item_" className="trash" onClick={deleteItem.bind(this,(element.IdOp))} ><FaTrashAlt/></button>
                   </li>}
           else{
             return (<li className="liTicketHeader" key={element.IdOp}>
@@ -79,7 +85,12 @@ function Cart(props) {
       <div className='totalLine'>
            <div>Total</div> 
            <div>{total} USD</div> 
-      </div>  
+      </div> 
+
+      <div className='payButton'>
+        <button className="finishButton" onClick={finish}>Finish</button>
+        </div> 
+
       </div>
     </div>
   );

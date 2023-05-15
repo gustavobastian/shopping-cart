@@ -47,13 +47,19 @@ const RouteSwitch = () => {
     return 1;
   }
 
+
+  const finish=()=>{    
+    setBuyList({list:[{"id":0,"name":"","price":"","IdOp":uniqid(),"quantity":0}]});    
+    return 1;
+  }
+
   return (
     <BrowserRouter>      
       <Routes>        
         <Route path="/" element={<Home value={buyList}/>} />
         <Route path="/about" element={<About value={buyList} />} />
         <Route path="/shop" element={<Shop value={buyList} addElement={(element)=>{addElement(element)}} />} />
-        <Route path="/cart" element={<Cart value={buyList} removeElement={(element)=>{removeElement(element)}}/>} />
+        <Route path="/cart" element={<Cart value={buyList} removeElement={(element)=>{removeElement(element)}} finish={finish}/>} />
          {/* 👇️ only match this when no other routes match */}
          <Route
             path="*"

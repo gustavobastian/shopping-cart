@@ -32,7 +32,7 @@ function ItemComponent(props) {
           <Quantity value={props.value} increaseQuantity={(value)=>{increaseQuantity(value)}} decreaseQuantity={(value)=>{decreaseQuantity(value)}}/>
         </div>
         <div className="linePrice">
-          <div className='priceLabel'>Price:{valueLocal.price} USD</div> <div className='addButton' onClick={addItemLocal}>Add</div>
+          <div className='priceLabel'>Price:{valueLocal.price} USD</div> <div className='addButton' onClick={addItemLocal}>Buy</div>
         </div>       
     </div>
   );
