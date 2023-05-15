@@ -3,17 +3,9 @@ import '../styles/quantity.css';
 import { useEffect,useState,useReducer } from 'react';
 
 function QuantityItem(props){
-    
-    
-    
-    
     const [quantity,setQuantity]= useState(0);
     const [ignored,forceupdate]=useReducer(x=>x+1,0);
-
     useEffect(()=>{
-      console.log("altered")        
-      console.log(JSON.stringify(props.value.list));
-      
       forceupdate();
     },[quantity,props.value.list]);
 

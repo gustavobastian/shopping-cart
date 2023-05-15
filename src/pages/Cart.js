@@ -4,14 +4,8 @@ import Header from '../components/header';
 import {FaTrashAlt} from "@react-icons/all-files/fa/FaTrashAlt";
 
 function Cart(props) {
-
-
-  
-  
   const [total,setTotal]=useState(0);
-  
   const [ignored,forceupdate]=useReducer(x=>x+1,0);
-
   const totalCalc=()=>{
     let totalLocal=0;
     props.value.list.forEach(element => {
@@ -33,8 +27,7 @@ function Cart(props) {
         return 1;
   }  
 
-  const finish=()=>{
-    console.log("removing ticket:")   
+  const finish=()=>{    
     window.alert("thanks for the purchasing!")
     props.finish();
     return 1;

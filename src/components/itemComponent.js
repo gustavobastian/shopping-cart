@@ -2,8 +2,7 @@ import '../styles/ItemComponent.css';
 import Quantity from './quantity'
 
 function ItemComponent(props) {
-    let valueLocal=props.value;    
-    console.log(JSON.stringify(props.value))
+    let valueLocal=props.value;        
     let quantity=0;
 
     const addItemLocal=()=>{        
@@ -12,15 +11,10 @@ function ItemComponent(props) {
 
     const increaseQuantity=(value)=>{
       quantity=value;
-      console.log(quantity);
-      console.log("passed:"+value);
     }
-
 
     const decreaseQuantity=(value)=>{
       quantity=value;
-      console.log(quantity);
-      console.log("passed dec:"+value);
     }
 
 

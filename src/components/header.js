@@ -6,13 +6,6 @@ import { Link } from 'react-router-dom';
 
 
 function Header(props) {
-
-  const onClickHome=()=>{
-  this.props.history.push('/');
-  }
-  const onClickCart=()=>{
-    this.props.history.push('/cart');
-    }
   return (
     <div className="headerClass">
        <div className="leftSpace">
