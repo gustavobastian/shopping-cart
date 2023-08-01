@@ -1,4 +1,6 @@
 import '../styles/ItemComponent.css';
+import React  from 'react';
+
 import Quantity from './quantity'
 
 function ItemComponent(props) {

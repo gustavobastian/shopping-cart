@@ -1,4 +1,6 @@
 import '../styles/Header.css';
+import React  from 'react';
+
 
 import { GiCommercialAirplane } from "@react-icons/all-files/gi/GiCommercialAirplane";
 import { GiShoppingCart } from "@react-icons/all-files/gi/GiShoppingCart";

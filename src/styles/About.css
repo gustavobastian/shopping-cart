@@ -2,7 +2,7 @@
     height: 90vh;    
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     background: linear-gradient(black,rgb(112, 112, 3),blue);
     padding-top:10%;

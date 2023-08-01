@@ -1,11 +1,12 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React  from 'react';
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";
 import uniqid from 'uniqid';
-import { useState,useEffect,useReducer ,React } from "react";
+import { useState,useEffect,useReducer } from "react";
 
 
 const RouteSwitch = () => {

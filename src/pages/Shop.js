@@ -1,4 +1,6 @@
 import '../styles/Shop.css';
+import React  from 'react';
+
 import ItemComponent from '../components/itemComponent';
 import Header from '../components/header';
 import uniqid from "uniqid";
@@ -33,15 +35,29 @@ function Shop(props) {
     props.addElement(elementToSend);    
   }
 
+
   return (
     <div>
       <Header/>
       <div className="Shop">
         <div className='ItemsArray'>
-            <ItemComponent value={item[0]} quantity="0" addItem={(quantity)=>{addElementLocal(item[0],quantity)}}/>
-            <ItemComponent value={item[1]} quantity="0" addItem={addElementLocal.bind(this,item[1])}/>
-            <ItemComponent value={item[2]} quantity="0" addItem={addElementLocal.bind(this,item[2])}/>
-            <ItemComponent value={item[3]} quantity="0" addItem={addElementLocal.bind(this,item[3])}/>
+            <ItemComponent value={item[0]} quantity="0" 
+              addItem={(quantity)=>{addElementLocal(item[0],quantity)}}
+              
+              
+              />
+            <ItemComponent value={item[1]} quantity="0" 
+              addItem={addElementLocal.bind(this,item[1])}
+              
+              />
+            <ItemComponent value={item[2]} quantity="0" 
+              addItem={addElementLocal.bind(this,item[2])}
+              
+              />
+            <ItemComponent value={item[3]} quantity="0" 
+              addItem={addElementLocal.bind(this,item[3])}
+              
+              />
         </div>
       </div>
     </div>

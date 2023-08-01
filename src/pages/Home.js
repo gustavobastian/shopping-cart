@@ -1,4 +1,6 @@
 import '../styles/Home.css';
+import React  from 'react';
+
 import { GiCommercialAirplane } from "@react-icons/all-files/gi/GiCommercialAirplane";
 import Header from '../components/header';
 

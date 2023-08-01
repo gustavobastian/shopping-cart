@@ -1,4 +1,6 @@
 import '../styles/quantity.css';
+import React  from 'react';
+
 
 import { useEffect,useState,useReducer } from 'react';
 
@@ -26,7 +28,7 @@ function QuantityItem(props){
     <div className="quantity">        
       <div>Quantity</div>
       <div className="boxQuantity">
-        <input id='item_{props.value.id}' className="quantityInput" type="text" placeholder='0' value={quantity}/>
+        <input id='item_{props.value.id}' className="quantityInput" type="text" placeholder='0' defaultValue={quantity}/>
         <div className="quantityButtons">
             <button className="QButtons" onClick={incQ}>+</button>      
             <button className="QButtons" onClick={decQ}>-</button>      

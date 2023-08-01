@@ -1,4 +1,6 @@
 import '../styles/Cart.css';
+import React  from 'react';
+
 import { useEffect,useState,useReducer } from 'react';
 import Header from '../components/header';
 import {FaTrashAlt} from "@react-icons/all-files/fa/FaTrashAlt";
