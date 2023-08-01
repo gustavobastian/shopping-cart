@@ -1,17 +1,17 @@
 {
-  "files": {
-    "main.css": "/shopping-cart/static/css/main.3f864f5c.css",
-    "main.js": "/shopping-cart/static/js/main.ba7f008f.js",
-    "static/media/plane_2.jpg": "/shopping-cart/static/media/plane_2.6a0076f25fe938a9cae0.jpg",
-    "static/media/plane_1.jpg": "/shopping-cart/static/media/plane_1.d82c52a76cddb7e274e8.jpg",
-    "static/media/plane_4.jpg": "/shopping-cart/static/media/plane_4.aa5e73318cd0cb047585.jpg",
-    "static/media/plane_3.jpg": "/shopping-cart/static/media/plane_3.f80f002372ad481daf99.jpg",
-    "index.html": "/shopping-cart/index.html",
-    "main.3f864f5c.css.map": "/shopping-cart/static/css/main.3f864f5c.css.map",
-    "main.ba7f008f.js.map": "/shopping-cart/static/js/main.ba7f008f.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.3f864f5c.css",
-    "static/js/main.ba7f008f.js"
-  ]
+  "main.css": "/shopping-cart/static/css/main.0b3ad65d.chunk.css",
+  "main.js": "/shopping-cart/static/js/main.1f257349.chunk.js",
+  "main.js.map": "/shopping-cart/static/js/main.1f257349.chunk.js.map",
+  "static/js/1.43634c04.chunk.js": "/shopping-cart/static/js/1.43634c04.chunk.js",
+  "static/js/1.43634c04.chunk.js.map": "/shopping-cart/static/js/1.43634c04.chunk.js.map",
+  "runtime~main.js": "/shopping-cart/static/js/runtime~main.b509cb4f.js",
+  "runtime~main.js.map": "/shopping-cart/static/js/runtime~main.b509cb4f.js.map",
+  "static/media/plane_1.jpg": "/shopping-cart/static/media/plane_1.8bd4a37b.jpg",
+  "static/media/plane_2.jpg": "/shopping-cart/static/media/plane_2.ac06808f.jpg",
+  "static/media/plane_3.jpg": "/shopping-cart/static/media/plane_3.8a55c5a7.jpg",
+  "static/media/plane_4.jpg": "/shopping-cart/static/media/plane_4.25f365a1.jpg",
+  "static/css/main.0b3ad65d.chunk.css.map": "/shopping-cart/static/css/main.0b3ad65d.chunk.css.map",
+  "index.html": "/shopping-cart/index.html",
+  "precache-manifest.7e6b82de105915cd3b30daed3be2538a.js": "/shopping-cart/precache-manifest.7e6b82de105915cd3b30daed3be2538a.js",
+  "service-worker.js": "/shopping-cart/service-worker.js"
 }
